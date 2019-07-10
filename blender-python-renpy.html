@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Blender Python Renpy</title>
+<meta name="description" content="BLOGG"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Blender Python Renpy</h1><p class="date">Created: 2019-07-10 Mi 13:21</p>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org4177625">1. Blender</a>
+<ul>
+<li><a href="#/slide-orgf71f45b">1.1. MB-Lab</a></li>
+<li><a href="#/slide-org1182799">1.2. archipack</a></li>
+<li><a href="#/slide-org2a1f3b2">1.3. hair-tool</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org9d3894c">2. Python</a>
+<ul>
+<li><a href="#/slide-org5695f7a">2.1. Python in Blender</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org2246103">3. Renpy</a>
+<ul>
+<li><a href="#/slide-orgd6dd34b">3.1. First Game</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-org4177625">
+<h2 id="org4177625"><span class="section-number-2">1</span> Blender</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-orgf71f45b">
+<h3 id="orgf71f45b"><span class="section-number-3">1.1</span> MB-Lab</h3>
+</section>
+<section id="slide-org1182799">
+<h3 id="org1182799"><span class="section-number-3">1.2</span> archipack</h3>
+</section>
+<section id="slide-org2a1f3b2">
+<h3 id="org2a1f3b2"><span class="section-number-3">1.3</span> hair-tool</h3>
+</section>
+</section>
+<section>
+<section id="slide-org9d3894c">
+<h2 id="org9d3894c"><span class="section-number-2">2</span> Python</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-org5695f7a">
+<h3 id="org5695f7a"><span class="section-number-3">2.1</span> Python in Blender</h3>
+</section>
+</section>
+<section>
+<section id="slide-org2246103">
+<h2 id="org2246103"><span class="section-number-2">3</span> Renpy</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+</section>
+<section id="slide-orgd6dd34b">
+<h3 id="orgd6dd34b"><span class="section-number-3">3.1</span> First Game</h3>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
