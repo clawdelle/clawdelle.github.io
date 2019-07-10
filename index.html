@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/reveal.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/css/reveal.css"/>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/theme/moon.css" id="theme"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/css/theme/moon.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -18,7 +18,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/print/pdf.css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -26,28 +26,41 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Blender Python Renpy</h1><p class="date">Created: 2019-07-10 Mi 12:58</p>
+<section id="sec-title-slide"><h1 class="title">Blender Python Renpy</h1><p class="date">Created: 2019-07-10 Mi 14:20</p>
 </section>
 <section id="table-of-contents">
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgafe6e92">1. Blender</a>
+<li><a href="#/slide-org4fc1b52">1. Blender</a>
 <ul>
-<li><a href="#/slide-org440e24f">1.1. MB-Lab</a></li>
-<li><a href="#/slide-org4d76f53">1.2. archipack</a></li>
-<li><a href="#/slide-org4b2fa39">1.3. hair-tool</a></li>
+<li><a href="#/slide-org84368a8">1.1. MB-Lab</a></li>
+<li><a href="#/slide-orgfff937e">1.2. archipack</a></li>
+<li><a href="#/slide-orgd50717c">1.3. hair-tool</a></li>
 </ul>
 </li>
-<li><a href="#/slide-orgdef3e92">2. Python</a>
+<li><a href="#/slide-org520a25e">2. Python</a>
 <ul>
-<li><a href="#/slide-org2d6a4bf">2.1. Python in Blender</a></li>
+<li><a href="#/slide-orgf638a71">2.1. Python in Blender</a></li>
 </ul>
 </li>
-<li><a href="#/slide-org6e55685">3. Renpy</a>
+<li><a href="#/slide-org63cf23d">3. Renpy</a>
 <ul>
-<li><a href="#/slide-org811f9b6">3.1. First Game</a></li>
+<li><a href="#/slide-orgb3f0615">3.1. First Game</a></li>
+</ul>
+</li>
+<li><a href="#/slide-orgcd4628f">4. emacs fun</a>
+<ul>
+<li><a href="#/slide-org73e8cd0">4.1. revealjs</a></li>
+<li><a href="#/slide-orga846be5">4.2. python debugging</a></li>
+<li><a href="#/slide-orgc8620fa">4.3. org-mode</a>
+<ul>
+<li><a href="#/slide-orgec7351f">4.3.1. org-reveal</a></li>
+<li><a href="#/slide-org5e1840d">4.3.2. tables</a></li>
+<li><a href="#/slide-orgd514315">4.3.3. todos</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -56,44 +69,71 @@
 </section>
 
 <section>
-<section id="slide-orgafe6e92">
-<h2 id="orgafe6e92"><span class="section-number-2">1</span> Blender</h2>
+<section id="slide-org4fc1b52">
+<h2 id="org4fc1b52"><span class="section-number-2">1</span> Blender</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 </section>
-<section id="slide-org440e24f">
-<h3 id="org440e24f"><span class="section-number-3">1.1</span> MB-Lab</h3>
+<section id="slide-org84368a8">
+<h3 id="org84368a8"><span class="section-number-3">1.1</span> MB-Lab</h3>
 </section>
-<section id="slide-org4d76f53">
-<h3 id="org4d76f53"><span class="section-number-3">1.2</span> archipack</h3>
+<section id="slide-orgfff937e">
+<h3 id="orgfff937e"><span class="section-number-3">1.2</span> archipack</h3>
 </section>
-<section id="slide-org4b2fa39">
-<h3 id="org4b2fa39"><span class="section-number-3">1.3</span> hair-tool</h3>
+<section id="slide-orgd50717c">
+<h3 id="orgd50717c"><span class="section-number-3">1.3</span> hair-tool</h3>
 </section>
 </section>
 <section>
-<section id="slide-orgdef3e92">
-<h2 id="orgdef3e92"><span class="section-number-2">2</span> Python</h2>
+<section id="slide-org520a25e">
+<h2 id="org520a25e"><span class="section-number-2">2</span> Python</h2>
 <div class="outline-text-2" id="text-2">
 </div>
 </section>
-<section id="slide-org2d6a4bf">
-<h3 id="org2d6a4bf"><span class="section-number-3">2.1</span> Python in Blender</h3>
+<section id="slide-orgf638a71">
+<h3 id="orgf638a71"><span class="section-number-3">2.1</span> Python in Blender</h3>
 </section>
 </section>
 <section>
-<section id="slide-org6e55685">
-<h2 id="org6e55685"><span class="section-number-2">3</span> Renpy</h2>
+<section id="slide-org63cf23d">
+<h2 id="org63cf23d"><span class="section-number-2">3</span> Renpy</h2>
 <div class="outline-text-2" id="text-3">
 </div>
 </section>
-<section id="slide-org811f9b6">
-<h3 id="org811f9b6"><span class="section-number-3">3.1</span> First Game</h3>
+<section id="slide-orgb3f0615">
+<h3 id="orgb3f0615"><span class="section-number-3">3.1</span> First Game</h3>
+</section>
+</section>
+<section>
+<section id="slide-orgcd4628f">
+<h2 id="orgcd4628f"><span class="section-number-2">4</span> emacs fun</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+</section>
+<section id="slide-org73e8cd0">
+<h3 id="org73e8cd0"><span class="section-number-3">4.1</span> revealjs</h3>
+</section>
+<section id="slide-orga846be5">
+<h3 id="orga846be5"><span class="section-number-3">4.2</span> python debugging</h3>
+</section>
+<section id="slide-orgc8620fa">
+<h3 id="orgc8620fa"><span class="section-number-3">4.3</span> org-mode</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+</section>
+<section id="slide-orgec7351f">
+<h4 id="orgec7351f"><span class="section-number-4">4.3.1</span> org-reveal</h4>
+</section>
+<section id="slide-org5e1840d">
+<h4 id="org5e1840d"><span class="section-number-4">4.3.2</span> tables</h4>
+</section>
+<section id="slide-orgd514315">
+<h4 id="orgd514315"><span class="section-number-4">4.3.3</span> todos</h4>
 </section>
 </section>
 </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/js/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -120,11 +160,11 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.8.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 </script>
 </body>

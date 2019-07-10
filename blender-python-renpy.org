@@ -9,4 +9,10 @@
 ** Python in Blender
 * Renpy
 ** First Game
-
+* emacs fun
+** revealjs
+** python debugging
+** org-mode
+*** org-reveal
+*** tables
+*** todos
